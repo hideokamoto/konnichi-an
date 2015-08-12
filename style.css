@@ -51,8 +51,13 @@ img{
 	max-width: 100%;
 	height: auto;
 }
+
 figure{
 	margin: 0 auto;
+}
+
+ul,ol{
+	padding-left: 12.5px;
 }
 
 /*--------------------------------------------------------------
@@ -173,6 +178,12 @@ figure{
 	margin: 0 0 1.5em;
 	background-color: #fff;
 	padding: 20px;
+}
+.widget-area h2 {
+	font-size: 24px;
+	margin-top: 0;
+	line-height: 32px;
+	margin-bottom: 8px;
 }
 
 /* Make sure select elements fit in widgets. */
