@@ -221,6 +221,9 @@ ul,ol{
 .site-description{
 	color: rgba(255, 255, 255, 0.870588);
 }
+.mdl-layout--fixed-drawer>.mdl-layout__header .mdl-layout__header-row{
+	padding-left: 60px;
+}
 
 
 /*--------------------------------------------------------------
