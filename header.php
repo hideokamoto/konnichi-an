@@ -60,4 +60,4 @@
 
 	<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 
-	<div id="content" class="site-content">
+	<main id="content" class="site-content mdl-layout__content">
