@@ -9,8 +9,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="primary" class="content-area mdl-grid">
+		<main id="main" class="site-main <?php konnichi_an_echo_main_class();?>" role="main">
 
 			<section class="error-404 not-found">
 				<header class="page-header">

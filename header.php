@@ -21,27 +21,22 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site layout-transparent mdl-layout mdl-js-layout">
+<div id="page" class="hfeed site mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'konnichi_an' ); ?></a>
 
-	<header id="masthead" class="site-header mdl-layout__header mdl-layout__header--transparent" role="banner">
-			<div class="mdl-layout__header-row">
-				<?php if ( is_front_page() && is_home() ) : ?>
-					<h1 class="mdl-layout-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php else : ?>
-					<p class="mdl-layout-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php endif; ?>
-				<!-- .site-title -->
-				<div class="mdl-layout-spacer"></div>
-				<!-- @TODO:Add Search Form -->
-				<form>
-					<input type="text" value="" placeholder="Sample Search">
-				</form>
+	<header id="masthead" class="site-header mdl-layout__header mdl-layout__header--seamed" role="banner">
+		<div class="mdl-layout__header-row">
+			<?php if ( is_front_page() && is_home() ) : ?>
+				<h1 class="mdl-layout-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="site-title"><?php bloginfo( 'name' ); ?></a><br/><small class="site-description"><?php bloginfo( 'description' ); ?></small></h1>
+			<?php else : ?>
+				<p class="mdl-layout-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="site-title"><?php bloginfo( 'name' ); ?></a><br/><small class="site-description"><?php bloginfo( 'description' ); ?></small></p>
+			<?php endif; ?>
+			<!-- .site-title -->
 		</div>
 	</header><!-- #masthead -->
 
 	<nav class="mdl-layout__drawer">
-	  <h2 class="mdl-layout-title">Title</h2>
+		<p class="mdl-layout-title">Menu</p>
 		<div id="site-navigation" class="mdl-navigation" role="navigation">
 			<?php
 				$arg = array(
@@ -57,7 +52,4 @@
 		</div><!-- #site-navigation -->
 	</nav>
 
-
-	<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-
-	<div id="content" class="site-content">
+	<div id="content" class="site-content mdl-layout__content">
