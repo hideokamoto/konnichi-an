@@ -52,5 +52,5 @@
 		</div><!-- #site-navigation -->
 	</nav>
 
-	<main id="content" class="site-content mdl-layout__content">
+	<div id="content" class="site-content mdl-layout__content">
 		<div class="mdl-grid">
