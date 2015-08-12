@@ -76,6 +76,8 @@ function konnichi_an_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	if ( ! isset( $content_width ) ) $content_width = 900;
 }
 endif; // konnichi_an_setup
 add_action( 'after_setup_theme', 'konnichi_an_setup' );
