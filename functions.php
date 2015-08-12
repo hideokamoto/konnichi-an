@@ -114,7 +114,7 @@ add_action( 'widgets_init', 'konnichi_an_widgets_init' );
  * Enqueue scripts and styles.
  */
 function konnichi_an_scripts() {
-	wp_enqueue_style( 'konnichi_an-style', get_template_directory_uri().'/inc/mdl/material.min.css' );
+	wp_enqueue_style( 'konnichi_an-mdl-style', get_template_directory_uri().'/inc/mdl/material.min.css' );
 	wp_enqueue_style( 'konnichi_an-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'konnichi_an-navigation', get_template_directory_uri() . '/inc/mdl/material.min.js', array(), '20120206', true );
