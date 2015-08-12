@@ -184,8 +184,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 ## Header and Footer
 --------------------------------------------------------------*/
+.site-header{
+	background-color: #303F9F;
+}
+.site-title{
+	color: #f5f5f5;
+	text-decoration: none;
+}
 .site-description{
-	color: rgba(0, 0, 0, 0.870588);
+	color: rgba(255, 255, 255, 0.870588);
 }
 
 /*--------------------------------------------------------------
