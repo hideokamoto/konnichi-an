@@ -154,7 +154,6 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
-
 function konnichi_an_empty_menu(){
 	echo "<li class='mdl-navigation__link'>". esc_html(__('No Menu', 'konnichi_an')). "</li>";
 }
