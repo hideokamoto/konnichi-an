@@ -53,4 +53,3 @@
 	</nav>
 
 	<div id="content" class="site-content mdl-layout__content">
-		<div class="mdl-grid">

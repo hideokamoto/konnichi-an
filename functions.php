@@ -159,12 +159,6 @@ function konnichi_an_empty_menu(){
 	echo "<li class='mdl-navigation__link'>". esc_html(__('No Menu', 'konnichi_an')). "</li>";
 }
 
-add_filter( 'nav_menu_css_class', 'my_nav_menu_css_class', 10, 2 );
-function my_nav_menu_css_class( $classes) {
-    $classes[] = 'mdl-navigation__link';
-  return $classes;
-}
-
 class MdlMenu extends Walker
 {
     public function walk( $elements, $max_depth )

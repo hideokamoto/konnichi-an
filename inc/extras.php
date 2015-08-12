@@ -23,6 +23,16 @@ function konnichi_an_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'konnichi_an_body_classes' );
 
+
+function konnichi_an_echo_main_class() {
+	if ( is_active_sidebar( 'sidebar-1' ) ){
+		$class = "mdl-cell--8-col mdl-cell--8-col-tablet";
+	} else {
+		$class = "mdl-cell--12-col";
+	}
+	echo $class;
+}
+
 if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	/**
 	 * Filters wp_title to print a neat <title> tag based on what is being viewed.
