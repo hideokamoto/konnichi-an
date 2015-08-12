@@ -177,7 +177,7 @@ class MdlMenu extends Walker
 							$class .= $classes. " ";
 						});
 						$class .= "mdl-navigation__link";
-            $list .= "<a href='{$url}' class='{$class}'>$item->title</a>";
+            $list .= "<a href='{$url}' class='{$class}'>". esc_html($item->title). "</a>";
 				}
         return $list;
     }
