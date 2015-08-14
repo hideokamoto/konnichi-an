@@ -44,7 +44,7 @@
 					'menu_id' => 'primary-menu',
 					'items_wrap' => '%3$s',
 					'container' => '',
-					'fallback_cb' => konnichi_an_empty_menu,
+					'fallback_cb' => 'konnichi_an_empty_menu',
 					'walker'      => new MdlMenu
 				);
 				wp_nav_menu($arg);
