@@ -76,6 +76,8 @@ function konnichi_an_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	if ( ! isset( $content_width ) ) $content_width = 900;
 }
 endif; // konnichi_an_setup
 add_action( 'after_setup_theme', 'konnichi_an_setup' );
@@ -114,7 +116,8 @@ add_action( 'widgets_init', 'konnichi_an_widgets_init' );
  * Enqueue scripts and styles.
  */
 function konnichi_an_scripts() {
-	wp_enqueue_style( 'konnichi_an-style', get_template_directory_uri().'/inc/mdl/material.min.css' );
+	wp_enqueue_style( 'konnichi_an-mdl-style', get_template_directory_uri().'/inc/mdl/material.min.css' );
+	wp_enqueue_style( 'konnichi_an-mdl-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons');
 	wp_enqueue_style( 'konnichi_an-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'konnichi_an-navigation', get_template_directory_uri() . '/inc/mdl/material.min.js', array(), '20120206', true );
@@ -153,15 +156,8 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
-
 function konnichi_an_empty_menu(){
 	echo "<li class='mdl-navigation__link'>". esc_html(__('No Menu', 'konnichi_an')). "</li>";
-}
-
-add_filter( 'nav_menu_css_class', 'my_nav_menu_css_class', 10, 2 );
-function my_nav_menu_css_class( $classes) {
-    $classes[] = 'mdl-navigation__link';
-  return $classes;
 }
 
 class MdlMenu extends Walker
@@ -177,7 +173,7 @@ class MdlMenu extends Walker
 							$class .= $classes. " ";
 						});
 						$class .= "mdl-navigation__link";
-            $list .= "<a href='{$url}' class='{$class}'>$item->title</a>";
+            $list .= "<a href='{$url}' class='{$class}'>". esc_html($item->title). "</a>";
 				}
         return $list;
     }
