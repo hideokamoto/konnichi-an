@@ -316,6 +316,16 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
+#: searchform.php:3
+#@ konnichi-an
+msgid "Search For:"
+msgstr ""
+
+#: searchform.php:7
+#@ konnichi-an
+msgid "Search"
+msgstr ""
+
 #: template-parts/content-none.php:14
 #@ konnichi-an
 msgid "Nothing Found"
