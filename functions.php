@@ -120,7 +120,7 @@ function konnichi_an_scripts() {
 	wp_enqueue_style( 'konnichi_an-mdl-icons', '//fonts.googleapis.com/icon?family=Material+Icons');
 	wp_enqueue_style( 'konnichi_an-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'konnichi_an-navigation', get_template_directory_uri() . '/inc/mdl/material.min.js', array(), '20120206', true );
+	wp_enqueue_script( 'konnichi_an-mdl-scripts', get_template_directory_uri() . '/inc/mdl/material.min.js', array(), '20120206', true );
 	wp_enqueue_script( 'konnichi_an-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'konnichi_an-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
