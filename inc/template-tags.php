@@ -20,15 +20,15 @@ function the_posts_navigation() {
 	}
 	?>
 	<nav class="navigation posts-navigation" role="navigation">
-		<h2 class="screen-reader-text"><?php esc_html_e( 'Posts navigation', 'konnichi_an' ); ?></h2>
+		<h2 class="screen-reader-text"><?php esc_html_e( 'Posts navigation', 'konnichi-an' ); ?></h2>
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( esc_html__( 'Older posts', 'konnichi_an' ) ); ?></div>
+			<div class="nav-previous"><?php next_posts_link( esc_html__( 'Older posts', 'konnichi-an' ) ); ?></div>
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( esc_html__( 'Newer posts', 'konnichi_an' ) ); ?></div>
+			<div class="nav-next"><?php previous_posts_link( esc_html__( 'Newer posts', 'konnichi-an' ) ); ?></div>
 			<?php endif; ?>
 
 		</div><!-- .nav-links -->
@@ -53,7 +53,7 @@ function the_post_navigation() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h2 class="screen-reader-text"><?php esc_html_e( 'Post navigation', 'konnichi_an' ); ?></h2>
+		<h2 class="screen-reader-text"><?php esc_html_e( 'Post navigation', 'konnichi-an' ); ?></h2>
 		<div class="nav-links">
 			<?php
 				previous_post_link( '<div class="nav-previous">%link</div>', '%title' );
@@ -83,12 +83,12 @@ function konnichi_an_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'konnichi_an' ),
+		esc_html_x( 'Posted on %s', 'post date', 'konnichi-an' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
 	$byline = sprintf(
-		esc_html_x( 'by %s', 'post author', 'konnichi_an' ),
+		esc_html_x( 'by %s', 'post author', 'konnichi-an' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
@@ -105,25 +105,25 @@ function konnichi_an_entry_footer() {
 	// Hide category and tag text for pages.
 	if ( 'post' == get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( esc_html__( ', ', 'konnichi_an' ) );
+		$categories_list = get_the_category_list( esc_html__( ', ', 'konnichi-an' ) );
 		if ( $categories_list && konnichi_an_categorized_blog() ) {
-			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'konnichi_an' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'konnichi-an' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'konnichi_an' ) );
+		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'konnichi-an' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'konnichi_an' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'konnichi-an' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 		}
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
-		comments_popup_link( esc_html__( 'Leave a comment', 'konnichi_an' ), esc_html__( '1 Comment', 'konnichi_an' ), esc_html__( '% Comments', 'konnichi_an' ) );
+		comments_popup_link( esc_html__( 'Leave a comment', 'konnichi-an' ), esc_html__( '1 Comment', 'konnichi-an' ), esc_html__( '% Comments', 'konnichi-an' ) );
 		echo '</span>';
 	}
 
-	edit_post_link( esc_html__( 'Edit', 'konnichi_an' ), '<span class="edit-link">', '</span>' );
+	edit_post_link( esc_html__( 'Edit', 'konnichi-an' ), '<span class="edit-link">', '</span>' );
 }
 endif;
 
@@ -140,45 +140,45 @@ if ( ! function_exists( 'the_archive_title' ) ) :
  */
 function the_archive_title( $before = '', $after = '' ) {
 	if ( is_category() ) {
-		$title = sprintf( esc_html__( 'Category: %s', 'konnichi_an' ), single_cat_title( '', false ) );
+		$title = sprintf( esc_html__( 'Category: %s', 'konnichi-an' ), single_cat_title( '', false ) );
 	} elseif ( is_tag() ) {
-		$title = sprintf( esc_html__( 'Tag: %s', 'konnichi_an' ), single_tag_title( '', false ) );
+		$title = sprintf( esc_html__( 'Tag: %s', 'konnichi-an' ), single_tag_title( '', false ) );
 	} elseif ( is_author() ) {
-		$title = sprintf( esc_html__( 'Author: %s', 'konnichi_an' ), '<span class="vcard">' . get_the_author() . '</span>' );
+		$title = sprintf( esc_html__( 'Author: %s', 'konnichi-an' ), '<span class="vcard">' . get_the_author() . '</span>' );
 	} elseif ( is_year() ) {
-		$title = sprintf( esc_html__( 'Year: %s', 'konnichi_an' ), get_the_date( esc_html_x( 'Y', 'yearly archives date format', 'konnichi_an' ) ) );
+		$title = sprintf( esc_html__( 'Year: %s', 'konnichi-an' ), get_the_date( esc_html_x( 'Y', 'yearly archives date format', 'konnichi-an' ) ) );
 	} elseif ( is_month() ) {
-		$title = sprintf( esc_html__( 'Month: %s', 'konnichi_an' ), get_the_date( esc_html_x( 'F Y', 'monthly archives date format', 'konnichi_an' ) ) );
+		$title = sprintf( esc_html__( 'Month: %s', 'konnichi-an' ), get_the_date( esc_html_x( 'F Y', 'monthly archives date format', 'konnichi-an' ) ) );
 	} elseif ( is_day() ) {
-		$title = sprintf( esc_html__( 'Day: %s', 'konnichi_an' ), get_the_date( esc_html_x( 'F j, Y', 'daily archives date format', 'konnichi_an' ) ) );
+		$title = sprintf( esc_html__( 'Day: %s', 'konnichi-an' ), get_the_date( esc_html_x( 'F j, Y', 'daily archives date format', 'konnichi-an' ) ) );
 	} elseif ( is_tax( 'post_format' ) ) {
 		if ( is_tax( 'post_format', 'post-format-aside' ) ) {
-			$title = esc_html_x( 'Asides', 'post format archive title', 'konnichi_an' );
+			$title = esc_html_x( 'Asides', 'post format archive title', 'konnichi-an' );
 		} elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) {
-			$title = esc_html_x( 'Galleries', 'post format archive title', 'konnichi_an' );
+			$title = esc_html_x( 'Galleries', 'post format archive title', 'konnichi-an' );
 		} elseif ( is_tax( 'post_format', 'post-format-image' ) ) {
-			$title = esc_html_x( 'Images', 'post format archive title', 'konnichi_an' );
+			$title = esc_html_x( 'Images', 'post format archive title', 'konnichi-an' );
 		} elseif ( is_tax( 'post_format', 'post-format-video' ) ) {
-			$title = esc_html_x( 'Videos', 'post format archive title', 'konnichi_an' );
+			$title = esc_html_x( 'Videos', 'post format archive title', 'konnichi-an' );
 		} elseif ( is_tax( 'post_format', 'post-format-quote' ) ) {
-			$title = esc_html_x( 'Quotes', 'post format archive title', 'konnichi_an' );
+			$title = esc_html_x( 'Quotes', 'post format archive title', 'konnichi-an' );
 		} elseif ( is_tax( 'post_format', 'post-format-link' ) ) {
-			$title = esc_html_x( 'Links', 'post format archive title', 'konnichi_an' );
+			$title = esc_html_x( 'Links', 'post format archive title', 'konnichi-an' );
 		} elseif ( is_tax( 'post_format', 'post-format-status' ) ) {
-			$title = esc_html_x( 'Statuses', 'post format archive title', 'konnichi_an' );
+			$title = esc_html_x( 'Statuses', 'post format archive title', 'konnichi-an' );
 		} elseif ( is_tax( 'post_format', 'post-format-audio' ) ) {
-			$title = esc_html_x( 'Audio', 'post format archive title', 'konnichi_an' );
+			$title = esc_html_x( 'Audio', 'post format archive title', 'konnichi-an' );
 		} elseif ( is_tax( 'post_format', 'post-format-chat' ) ) {
-			$title = esc_html_x( 'Chats', 'post format archive title', 'konnichi_an' );
+			$title = esc_html_x( 'Chats', 'post format archive title', 'konnichi-an' );
 		}
 	} elseif ( is_post_type_archive() ) {
-		$title = sprintf( esc_html__( 'Archives: %s', 'konnichi_an' ), post_type_archive_title( '', false ) );
+		$title = sprintf( esc_html__( 'Archives: %s', 'konnichi-an' ), post_type_archive_title( '', false ) );
 	} elseif ( is_tax() ) {
 		$tax = get_taxonomy( get_queried_object()->taxonomy );
 		/* translators: 1: Taxonomy singular name, 2: Current taxonomy term */
-		$title = sprintf( esc_html__( '%1$s: %2$s', 'konnichi_an' ), $tax->labels->singular_name, single_term_title( '', false ) );
+		$title = sprintf( esc_html__( '%1$s: %2$s', 'konnichi-an' ), $tax->labels->singular_name, single_term_title( '', false ) );
 	} else {
-		$title = esc_html__( 'Archives', 'konnichi_an' );
+		$title = esc_html__( 'Archives', 'konnichi-an' );
 	}
 
 	/**

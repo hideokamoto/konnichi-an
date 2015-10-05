@@ -20,9 +20,9 @@ function konnichi_an_setup() {
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 * If you're building a theme based on Konnichi An, use a find and replace
-	 * to change 'konnichi_an' to the name of your theme in all the template files
+	 * to change 'konnichi-an' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'konnichi_an', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'konnichi-an', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -44,7 +44,7 @@ function konnichi_an_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary Menu', 'konnichi_an' ),
+		'primary' => esc_html__( 'Primary Menu', 'konnichi-an' ),
 	) );
 
 	/*
@@ -101,7 +101,7 @@ add_action( 'after_setup_theme', 'konnichi_an_content_width', 0 );
  */
 function konnichi_an_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'konnichi_an' ),
+		'name'          => esc_html__( 'Sidebar', 'konnichi-an' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -157,7 +157,7 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 function konnichi_an_empty_menu(){
-	echo "<li class='mdl-navigation__link'>". esc_html(__('No Menu', 'konnichi_an')). "</li>";
+	echo "<li class='mdl-navigation__link'>". esc_html(__('No Menu', 'konnichi-an')). "</li>";
 }
 
 class MdlMenu extends Walker

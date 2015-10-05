@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'konnichi_an' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'konnichi-an' ); ?></a>
 
 	<header id="masthead" class="site-header mdl-layout__header mdl-layout__header--seamed" role="banner">
 		<div class="mdl-layout__header-row">
