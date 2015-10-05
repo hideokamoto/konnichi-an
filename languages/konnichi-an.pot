@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: konnichi-an 1.0.0\n"
+"Project-Id-Version: konnichi-an 1.0.2\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/konnichi-an\n"
 "POT-Creation-Date: 2015-06-12 21:51:31+0000\n"
 "MIME-Version: 1.0\n"

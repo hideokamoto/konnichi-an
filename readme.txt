@@ -5,11 +5,11 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.2.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A starter theme called Konnichi An, or underscores.
+A starter theme called Konnichi An, using underscores and Material Design Lite.
 
 == Description ==
 
