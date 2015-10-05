@@ -37,6 +37,7 @@ Konnichi An includes support for Infinite Scroll in Jetpack.
 * Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
 * Material Design Lite https://github.com/google/material-design-lite, (C) 2015 Google, Inc.,[Apache-2.0](http://www.apache.org/licenses/)
+* The image used in screenshot of the theme is theme's author personal creation and is licensed under GPLv2 or later.
 * Contributor
  Hideokamoto:https://profiles.wordpress.org/hideokamoto,
  Hinaloe:https://profiles.wordpress.org/hnle
