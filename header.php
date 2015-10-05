@@ -36,7 +36,7 @@
 	</header><!-- #masthead -->
 
 	<nav class="mdl-layout__drawer">
-		<p class="mdl-layout-title">Menu</p>
+		<p class="mdl-layout-title"><?php esc_html_e( 'Menu', 'konnichi-an' ); ?></p>
 		<div id="site-navigation" class="mdl-navigation" role="navigation">
 			<?php
 				$arg = array(

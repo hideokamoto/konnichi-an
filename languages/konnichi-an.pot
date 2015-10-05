@@ -99,6 +99,11 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
+#: header.php:39
+#@ konnichi-an
+msgid "Menu"
+msgstr ""
+
 #: inc/extras.php:52
 #, php-format
 #@ konnichi-an
