@@ -4,5 +4,5 @@
       <input type="text" class="mdl-textfield__input" value="<?php echo get_search_query();?>" name="s" id="s" />
       <label class="mdl-textfield__label" for="s"><?php echo __('Search for:', 'konnichi-an');?></label>
     </div>
-    <input type="submit" id="searchsubmit" class="mdl-button mdl-js-button" value="<?php echo echo __('Search', 'konnichi-an');?>" />
+    <input type="submit" id="searchsubmit" class="mdl-button mdl-js-button" value="<?php echo __('Search', 'konnichi-an');?>" />
   </form>
