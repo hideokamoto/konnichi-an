@@ -160,7 +160,7 @@ function konnichi_an_empty_menu(){
 	echo "<li class='mdl-navigation__link'>". esc_html(__('No Menu', 'konnichi-an')). "</li>";
 }
 
-class MdlMenu extends Walker
+class konnichi_an_menu extends Walker
 {
     public function walk( $elements, $max_depth )
     {
