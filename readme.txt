@@ -6,8 +6,8 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 Requires at least: 4.0
 Tested up to: 4.2.2
 Stable tag: 1.0.2
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GPLv3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 A starter theme called Konnichi An, using underscores and Material Design Lite.
 
@@ -37,7 +37,7 @@ Konnichi An includes support for Infinite Scroll in Jetpack.
 * Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
 * Material Design Lite https://github.com/google/material-design-lite, (C) 2015 Google, Inc.,[Apache-2.0](http://www.apache.org/licenses/)
-* The image used in screenshot of the theme is theme's author personal creation and is licensed under GPLv2 or later.
+* The image used in screenshot of the theme is theme's author personal creation and is licensed under GPLv3 or later.
 * Contributor
  Hideokamoto:https://profiles.wordpress.org/hideokamoto,
  Hinaloe:https://profiles.wordpress.org/hnle
