@@ -278,6 +278,13 @@ pre {
 	padding: 20px;
 }
 
+.page-header {
+	background-color: #fff;
+	padding: 10px;
+	margin-bottom: 1.5em;
+	text-align: center;
+}
+
 /*--------------------------------------------------------------
 ## Post Navigation Links
 --------------------------------------------------------------*/
@@ -307,7 +314,7 @@ pre {
 .comments-area {
 	padding: 20px;
 	background-color: #fff;
-	
+
 }
 .comment-content a {
 	word-wrap: break-word;
