@@ -255,6 +255,17 @@ ul,ol{
 	margin: 1.5em 0 0;
 }
 
+.entry-title a {
+	text-decoration: none;
+}
+@media (max-width: 839px) {
+	.entry-title {
+		font-size: 25px;
+		line-height: 30px;
+		margin-top: 12px;
+	}
+}
+
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
