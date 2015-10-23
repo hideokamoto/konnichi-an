@@ -304,6 +304,11 @@ pre {
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
+.comments-area {
+	padding: 20px;
+	background-color: #fff;
+	
+}
 .comment-content a {
 	word-wrap: break-word;
 }
