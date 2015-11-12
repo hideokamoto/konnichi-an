@@ -9,7 +9,7 @@
 
 ?>
 
-<section class="no-results not-found">
+<section class="no-results not-found mdl-shadow--2dp">
 	<header class="page-header">
 		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'konnichi-an' ); ?></h1>
 	</header><!-- .page-header -->
