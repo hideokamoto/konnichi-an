@@ -24,7 +24,7 @@
 <div id="page" class="hfeed site mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'konnichi-an' ); ?></a>
 
-	<header id="masthead" class="site-header mdl-layout__header mdl-layout__header--seamed" role="banner">
+	<header id="masthead" class="site-header mdl-layout__header" role="banner">
 		<div class="mdl-layout__header-row">
 			<?php if ( is_front_page() && is_home() ) : ?>
 				<h1 class="mdl-layout-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="site-title"><?php bloginfo( 'name' ); ?></a><br/><small class="site-description"><?php bloginfo( 'description' ); ?></small></h1>

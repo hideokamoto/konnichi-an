@@ -4,7 +4,7 @@ Theme URI: https://github.com/hideokamoto/konnichi-an/
 Author: hideokamoto
 Author URI: https://profiles.wordpress.org/hideokamoto
 Description: Simply Blog Theme using Material Design Light
-Version: 1.0.3
+Version: 1.1.0
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: konnichi-an
@@ -255,6 +255,17 @@ ul,ol{
 	margin: 1.5em 0 0;
 }
 
+.entry-title a {
+	text-decoration: none;
+}
+@media (max-width: 839px) {
+	.entry-title {
+		font-size: 25px;
+		line-height: 30px;
+		margin-top: 12px;
+	}
+}
+
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
@@ -265,6 +276,23 @@ pre {
 	margin: 0 -20px;
 	overflow: scroll;
 	padding: 20px;
+}
+
+.page-header {
+	background-color: #fff;
+	padding: 10px;
+	margin-bottom: 1.5em;
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Post Navigation Links
+--------------------------------------------------------------*/
+.nav-links a{
+	display: inline-block;
+	text-decoration: none;
+	background-color: #fff;
+	padding: 15px 20px;
 }
 
 /*--------------------------------------------------------------
@@ -282,6 +310,11 @@ pre {
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
+.comments-area {
+	padding: 20px;
+	background-color: #fff;
+
+}
 .comment-content a {
 	word-wrap: break-word;
 }
