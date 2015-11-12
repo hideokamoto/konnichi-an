@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.2.2
-Stable tag: 1.0.3
+Stable tag: 1.1.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -28,6 +28,9 @@ Hi. I'm a starter theme called Konnichi An, or underscores, if you like. I'm a t
 Konnichi An includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.1 - Nov 12 2015 =
+* Design Updated
 
 = 1.0 - May 12 2015 =
 * Initial release
