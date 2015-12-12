@@ -61,6 +61,34 @@ ul,ol{
 }
 
 /*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+h1 {
+    margin: 1rem auto;
+    font-size:2.50rem;
+}
+h2 {
+    margin: 1rem auto;
+    font-size:2.00rem;
+}
+h3 {
+    margin: 1rem auto;
+    font-size:1.75rem;
+}
+h4 {
+    margin: 1rem auto;
+    font-size:1.50rem;
+}
+h5 {
+    margin: 1rem auto;
+    font-size:1.25rem;
+}
+h6 {
+    margin: 1rem auto;
+    font-size:1.00rem;
+}
+
+/*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 
