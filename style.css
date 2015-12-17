@@ -261,7 +261,6 @@ h6 {
 ## Posts and pages
 --------------------------------------------------------------*/
 .sticky {
-	display: block;
 }
 
 .hentry {
@@ -285,7 +284,10 @@ h6 {
 .entry-summary {
 	margin: 1.5em 0 0;
 }
-
+.archive-row .entry-title {
+	margin: 0rem auto 1rem;
+	line-height: 1;
+}
 .entry-title a {
 	text-decoration: none;
 }
