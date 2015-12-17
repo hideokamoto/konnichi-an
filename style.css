@@ -61,6 +61,37 @@ ul,ol{
 }
 
 /*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+h1 {
+    margin: 1rem auto;
+    font-size:2.50rem;
+}
+h2 {
+    margin: 1rem auto;
+    font-size:2.00rem;
+}
+h3 {
+    margin: 1rem auto;
+    font-size:1.75rem;
+}
+h4 {
+    margin: 1rem auto;
+    font-size:1.50rem;
+}
+h5 {
+    margin: 1rem auto;
+    font-size:1.25rem;
+}
+h6 {
+    margin: 1rem auto;
+    font-size:1.00rem;
+}
+.mdl-layout-title {
+	margin-left: 0;
+}
+
+/*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 
@@ -230,7 +261,6 @@ ul,ol{
 ## Posts and pages
 --------------------------------------------------------------*/
 .sticky {
-	display: block;
 }
 
 .hentry {
@@ -254,7 +284,10 @@ ul,ol{
 .entry-summary {
 	margin: 1.5em 0 0;
 }
-
+.archive-row .entry-title {
+	margin: 0rem auto 1rem;
+	line-height: 1;
+}
 .entry-title a {
 	text-decoration: none;
 }
